@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* .image-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+  }
+   */
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  background-color: white;
+  width: calc(100% + -22px);
+  padding: 2vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-family: "Roboto", sans-serif;
+  border-radius: 10px;
+}
+.title {
+  margin-top: 2px;
+  font-size: 13px;
+}
+.flexItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.money {
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2px;
+}
+
+.doller {
+  background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 8px;
+  width: 50px;
+  float: right;
+}
+
+.example-card {
+  max-width: 400px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
+
+.bodyContant {
+  width: 60%;
+}
+.contant {
+  display: flex;
+  flex-direction: row;
+}
+.percent {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  margin: 6px;
+  font-weight: bolder;
+  color: rgb(14, 238, 100);
+}
+.cardView {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 480px) {
+  .cardView {
+    flex-direction: row;
+  }
+  .card {
+    margin-left: 20px;
+    width: calc(100% + -22px);
+  }
+}
+
+.robotfont{
+  font-family: "Roboto", sans-serif;
+}

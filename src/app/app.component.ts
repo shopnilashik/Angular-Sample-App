@@ -1,7 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
@@ -12,12 +10,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import {MatInputModule} from '@angular/material/input';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [
-    CommonModule,
+  imports: [   CommonModule,
     RouterOutlet,
     MatToolbarModule,
     MatButtonModule,
@@ -31,13 +27,11 @@ import { AboutComponent } from './about/about.component';
     AboutComponent,
     RouterLink,
     RouterLinkActive,
-    RouterOutlet
-  ],
+    RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
-  // animations: [myNg]
+  styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit{
+export class AppComponent{
   title = 'my-app';
   showFiller= true;
   
