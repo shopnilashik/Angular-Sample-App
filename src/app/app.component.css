@@ -61,7 +61,7 @@ body {
 .buttons button {
   padding: 5px 10px;
   margin-left: 15px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   color: #159895;
   border: none;
   cursor: pointer;

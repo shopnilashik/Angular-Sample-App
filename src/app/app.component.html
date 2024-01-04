@@ -7,11 +7,11 @@
 <main class="main">
   <div class="top">
     <div class="navbar">
-      <div style="display: flex; flex-direction: row;">
+      <div style="display: flex; flex-direction: row">
         <button mat-mini-fab color="" (click)="drawer.toggle()">
           <mat-icon>menu</mat-icon>
         </button>
-		<P style="margin-left: 20px;">My App</P>
+        <P style="margin-left: 20px">My App</P>
       </div>
       <div class="search-bar">
         <!-- <form class="">
@@ -21,13 +21,19 @@
           </form> -->
       </div>
       <div class="buttons nav-div">
-        <button mat-button>Home</button>
-        <button mat-button>About</button>
-        <button mat-button>Services</button>
-        <button mat-button>Contact</button>
+        <button mat-raised-button>Home</button>
+        <button mat-raised-button>About</button>
+        <button mat-raised-button>Services</button>
+        <button mat-raised-button>Contact</button>
+        <button mat-raised-button color="warn" style="color: white">
+          Log In
+        </button>
       </div>
     </div>
     <mat-drawer-container class="example-container">
+      
+      <router-outlet></router-outlet>
+
       <mat-drawer #drawer class="example-sidenav" mode="side">
         @if (showFiller) {
         <p>Welcome To My App</p>
@@ -35,18 +41,16 @@
         <div>
           <nav class="navbarleft">
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
+              <li><a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
+              <li><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a></li>
               <li><a href="#">Services</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
           </nav>
-		  
         </div>
       </mat-drawer>
-      <p>sfdgsdfgsdfgsdfg</p>
     </mat-drawer-container>
+
   </div>
 </main>
 
-<router-outlet></router-outlet>
