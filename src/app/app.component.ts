@@ -10,6 +10,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import {MatInputModule} from '@angular/material/input';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { WebcomponentComponent } from './webcomponent/webcomponent.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -25,6 +26,7 @@ import { AboutComponent } from './about/about.component';
     MatInputModule,
     HomeComponent,
     AboutComponent,
+    WebcomponentComponent,
     RouterLink,
     RouterLinkActive,
     RouterOutlet],
